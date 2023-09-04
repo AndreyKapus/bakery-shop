@@ -4,52 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header>
       <nav>
         <a href="/">
           <img src="./images/logo.svg" alt="Логотип" />
         </a>
-        <ul>
-          <li>
-            <a href="#traditions-section">Наші традиції</a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#traditions-section"
+              >Наші традиції</a
+            >
           </li>
-          <li>
-            <a href="#chefs-section">Шеф-кухарі</a>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#chefs-section">Шеф-кухарі</a>
           </li>
-          <li>
-            <a href="#formats-section">Формати</a>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#formats-section">Формати</a>
           </li>
-          <li>
-            <a href="#contacts-section">Контакти</a>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
 
-        <button type="button">Замовити дзвінок</button>
+        <button class="order-button" type="button">Замовити дзвінок</button>
       </nav>
     </header>
 
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1><span class="accent">Сучасна</span> пекарня</h1>
       </section>
 
       <section id="traditions-section">
-        <ul>
+        <ul class="advanteges-list">
           <li>Bеликий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
         <h2>Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+          <span class="accent-definition">shop bakery</span> — це пекарня, яка
+          взяла все найкраще, і зберегла смак традиційної випічки та
+          натуральність інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span class="accent-text">5 хвилин і замовлення готове</span>. А ще у
+          наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
       </section>
 
@@ -135,7 +140,7 @@
           <input name="name" />
           <input name="phone" />
           <input name="email" />
-          <button type="button">Замовити дзвінок</button>
+          <button class="order-button" type="button">Замовити дзвінок</button>
         </form>
         <p>
           Натискаючи на кнопку я погоджуюсь з
@@ -158,18 +163,20 @@
         <a>
           <img href="./images/logo.svg" />
         </a>
-        <ul>
+        <ul class="footer-nav">
           <li>
-            <a href="#traditions-section">Наші традиції</a>
+            <a class="nav-list-link" href="#traditions-section"
+              >Наші традиції</a
+            >
           </li>
           <li>
-            <a href="#chefs-section">Шеф-кухарі</a>
+            <a class="nav-list-link" href="#chefs-section">Шеф-кухарі</a>
           </li>
           <li>
-            <a href="#formats-section">Формати</a>
+            <a class="nav-list-link" href="#formats-section">Формати</a>
           </li>
           <li>
-            <a href="#contacts-section">Контакти</a>
+            <a class="nav-list-link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
       </nav>
