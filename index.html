@@ -8,19 +8,21 @@
   <body>
     <header>
       <nav>
-        <img src="./images/logo.svg" alt="Логотип" />
+        <a href="/">
+          <img src="./images/logo.svg" alt="Логотип" />
+        </a>
         <ul>
           <li>
-            <a href="#">Наші традиції</a>
+            <a href="#traditions-section">Наші традиції</a>
           </li>
           <li>
-            <a href="#">Шеф-кухарі</a>
+            <a href="#chefs-section">Шеф-кухарі</a>
           </li>
           <li>
-            <a href="#">Формати</a>
+            <a href="#formats-section">Формати</a>
           </li>
           <li>
-            <a href="#">Контакти</a>
+            <a href="#contacts-section">Контакти</a>
           </li>
         </ul>
 
@@ -33,7 +35,7 @@
         <h1>Сучасна пекарня</h1>
       </section>
 
-      <section>
+      <section id="traditions-section">
         <ul>
           <li>Bеликий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
@@ -51,7 +53,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="chefs-section">
         <h2>Наші найкращі шеф -кухарі</h2>
         <article>
           <img />
@@ -72,7 +74,7 @@
         </article>
       </section>
 
-      <section>
+      <section id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -126,7 +128,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="contacts-section">
         <h2>Приєднуйся до мережі пекарень</h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
         <form>
@@ -139,27 +141,38 @@
           Натискаючи на кнопку я погоджуюсь з
           <span><a>політикою конфіденційності</a></span>
         </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2935.3582085146254!2d30.51980927002846!3d50.44743163926515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1693819795740!5m2!1sru!2sua"
+          width="603"
+          height="595"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
 
     <footer>
-      <a>
-        <img href="./images/logo.svg" />
-      </a>
-      <ul>
-        <li>
-          <a href="#">Наші традиції</a>
-        </li>
-        <li>
-          <a href="#">Шеф-кухарі</a>
-        </li>
-        <li>
-          <a href="#">Формати</a>
-        </li>
-        <li>
-          <a href="#">Контакти</a>
-        </li>
-      </ul>
+      <nav>
+        <a>
+          <img href="./images/logo.svg" />
+        </a>
+        <ul>
+          <li>
+            <a href="#traditions-section">Наші традиції</a>
+          </li>
+          <li>
+            <a href="#chefs-section">Шеф-кухарі</a>
+          </li>
+          <li>
+            <a href="#formats-section">Формати</a>
+          </li>
+          <li>
+            <a href="#contacts-section">Контакти</a>
+          </li>
+        </ul>
+      </nav>
 
       <address>
         <ul>
@@ -173,6 +186,9 @@
             >
           </li>
         </ul>
+
+        <a href="#">Політика конфіденційності</a>
+        <p>&copy 2023 Дані захищено</p>
       </address>
     </footer>
   </body>
