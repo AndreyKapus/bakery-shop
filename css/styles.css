@@ -26,6 +26,10 @@
   src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --accent-color-light: #819b57;
   --accent-color-dark: #465929;
@@ -52,6 +56,15 @@ h2 {
 }
 
 /*--------- Header section ----------- */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
 
 .nav-list-link {
   color: var(--text-color-light);
