@@ -31,6 +31,7 @@
   --accent-color-dark: #465929;
   --text-color-light: #faf4ea;
   --text-color-dark: #31261a;
+  --secondary-text-color: #a18268;
 }
 
 /* -------- global --------- */
@@ -174,6 +175,26 @@ h2 {
   text-decoration: underline;
 }
 
+/* ---------- Footer --------------- */
+
 .footer-nav {
   list-style: none;
+}
+
+.adress-link {
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-politics {
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--text-color-light);
+}
+
+.footer-politics-link {
+  font-size: 14px;
+  color: var(--secondary-text-color);
 }
