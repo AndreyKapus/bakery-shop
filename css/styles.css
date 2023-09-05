@@ -1,8 +1,45 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
+}
+
 :root {
   --accent-color-light: #819b57;
   --accent-color-dark: #465929;
   --text-color-light: #faf4ea;
   --text-color-dark: #31261a;
+}
+
+/* -------- global --------- */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 ul {
@@ -13,26 +50,40 @@ h2 {
   color: var(--text-color-dark);
 }
 
+/*--------- Header section ----------- */
+
 .nav-list-link {
   color: var(--text-color-light);
   text-decoration: none;
 }
 
-.nav-list-link:hover {
+.nav-list-link:hover,
+:focus {
   color: var(--accent-color-light);
+  font-weight: 600;
 }
 
 .order-button {
   background-color: var(--accent-color-light);
-  border-color: var(--accent-color-light);
+  border: 2px solid var(--accent-color-light);
   color: var(--text-color-light);
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .order-button:hover {
   background-color: transparent;
   color: var(--accent-color-dark);
+}
+
+/* ------------ Hero section --------------- */
+
+.hero-title {
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
+  color: var(--text-color-light);
 }
 
 .accent {
