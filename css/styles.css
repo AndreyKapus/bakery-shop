@@ -133,8 +133,45 @@ h2 {
   font-weight: 600;
 }
 
-.contacts-text {
+/* ------------ Formats-section--------------- */
+
+.formats-title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.formats-el-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+.formats-definition-list {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color-light);
+}
+
+/* -------------- Contacts-section--------------- */
+
+.contacts-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.contacts-subtitle {
   color: var(--accent-color-dark);
+}
+
+.contacts-politics {
+  font-size: 12px;
+}
+
+.politics-link {
+  text-decoration: underline;
 }
 
 .footer-nav {
