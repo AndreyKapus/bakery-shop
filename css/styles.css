@@ -41,10 +41,21 @@
 /* -------- global --------- */
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin-top: 0px;
 }
 
 ul {
@@ -91,9 +102,23 @@ h2 {
   color: var(--accent-color-dark);
 }
 
+/* -----------Container--------------------- */
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0, auto;
+}
+
 /* ------------ Hero section --------------- */
 
 .hero-title {
+  margin-bottom: 0px;
+  padding: 272px 0;
   text-align: center;
   font-size: 128px;
   font-weight: 900;
@@ -102,6 +127,20 @@ h2 {
 
 .accent {
   color: var(--accent-color-light);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* --------------Traditions section-------------- */
