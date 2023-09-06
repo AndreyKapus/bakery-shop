@@ -111,14 +111,18 @@ h2 {
 .container {
   width: 100%;
   max-width: 1288px;
-  margin: 0, auto;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* ------------ Hero section --------------- */
 
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   margin-bottom: 0px;
-  padding: 272px 0;
   text-align: center;
   font-size: 128px;
   font-weight: 900;
@@ -143,14 +147,23 @@ h2 {
   overflow: hidden;
 }
 
-/* --------------Traditions section-------------- */
+/* --------------- Advanteges section-------------- */
+
+.advanteges-section {
+  background-color: var(--accent-color-light);
+}
 
 .advanteges-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 16px 0;
   font-size: 20px;
   font-weight: 300;
-  background-color: var(--accent-color-light);
   color: var(--text-color-light);
 }
+
+/* --------------Traditions section-------------- */
 
 .traditions-title {
   font-weight: 900;
