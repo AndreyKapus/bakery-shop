@@ -68,13 +68,20 @@ h2 {
 
 /*--------- Header section ----------- */
 
+.header-section {
+  padding: 32px 0px;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-list {
   display: flex;
+  gap: 64px;
 }
 
 .nav-list-link {
@@ -89,6 +96,7 @@ h2 {
 }
 
 .order-button {
+  padding: 16px 32px;
   background-color: var(--accent-color-light);
   border: 2px solid var(--accent-color-light);
   color: var(--text-color-light);
@@ -156,6 +164,8 @@ h2 {
 .advanteges-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 40px;
   margin: 0 auto;
   padding: 16px 0;
   font-size: 20px;
@@ -164,6 +174,20 @@ h2 {
 }
 
 /* --------------Traditions section-------------- */
+
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.traditions-content {
+  min-width: 710px;
+}
 
 .traditions-title {
   margin-bottom: 42px;
@@ -181,6 +205,10 @@ h2 {
 
 .traditions-text {
   margin-bottom: 42px;
+}
+
+.traditions-text:last-child {
+  max-width: 330px;
 }
 
 .accent-text {
