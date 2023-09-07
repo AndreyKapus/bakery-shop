@@ -60,6 +60,8 @@ p {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -182,11 +184,11 @@ h2 {
 .traditions-container {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 40px;
 }
 
 .traditions-content {
-  min-width: 710px;
+  max-width: 710px;
 }
 
 .traditions-title {
@@ -233,6 +235,20 @@ h2 {
 }
 
 /* ------------ Formats-section--------------- */
+.format-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-cards {
+  padding: 20px;
+  border: 1px solid black; /*------to remove--------*/
+}
 
 .formats-title {
   text-align: center;
@@ -255,6 +271,10 @@ h2 {
 
 /* -------------- Contacts-section--------------- */
 
+.contacts-wrapper {
+  display: flex;
+}
+
 .contacts-title {
   font-size: 64px;
   font-weight: 900;
@@ -275,8 +295,23 @@ h2 {
 
 /* ---------- Footer --------------- */
 
+.footer-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .footer-nav {
   list-style: none;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .adress-link {
@@ -285,7 +320,17 @@ h2 {
   text-decoration: none;
 }
 
+.address-item {
+  max-width: 211px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .footer-politics {
+  display: block;
+  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
@@ -293,6 +338,7 @@ h2 {
 }
 
 .footer-politics-link {
+  margin-bottom: 0;
   font-size: 14px;
   color: var(--secondary-text-color);
 }
