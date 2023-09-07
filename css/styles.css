@@ -219,10 +219,20 @@ h2 {
 
 /* --------- Cheaf-section------------ */
 
+.coocker-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .chefs-section {
   text-align: center;
   font-size: 64px;
   font-weight: 900;
+}
+
+.chef-card {
+  display: flex;
 }
 
 .chef-accent {
@@ -233,6 +243,10 @@ h2 {
   font-size: 40px;
   font-weight: 600;
 }
+
+/* .chef-text {
+  max-width: 337px;
+} */
 
 /* ------------ Formats-section--------------- */
 .format-list {
