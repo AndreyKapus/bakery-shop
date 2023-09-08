@@ -129,6 +129,10 @@ h2 {
 
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images//images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -255,10 +259,6 @@ h2 {
   gap: 20px;
 }
 
-.formats-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-
 .format-cards {
   padding: 20px;
   border: 1px solid black; /*------to remove--------*/
@@ -312,6 +312,11 @@ h2 {
 .footer-section {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-image: url(../images/images/footer-bg.png.png);
+  background-color: var(--text-color-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-container {
