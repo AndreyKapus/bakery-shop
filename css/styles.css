@@ -31,7 +31,8 @@
 }
 
 :root {
-  --accent-color-light: #819b57;
+  --accent-color-light: #cfcfbc;
+  --accent-color-normal: #819b57;
   --accent-color-dark: #465929;
   --text-color-light: #faf4ea;
   --text-color-dark: #31261a;
@@ -46,6 +47,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+  background-color: var(--text-color-light);
 }
 
 h1,
@@ -93,14 +95,14 @@ h2 {
 
 .nav-list-link:hover,
 :focus {
-  color: var(--accent-color-light);
+  color: var(--accent-color-normal);
   font-weight: 600;
 }
 
 .order-button {
   padding: 16px 32px;
-  background-color: var(--accent-color-light);
-  border: 2px solid var(--accent-color-light);
+  background-color: var(--accent-color-normal);
+  border: 2px solid var(--accent-color-normal);
   color: var(--text-color-light);
   border-radius: 8px;
   cursor: pointer;
@@ -144,7 +146,7 @@ h2 {
 }
 
 .accent {
-  color: var(--accent-color-light);
+  color: var(--accent-color-normal);
 }
 
 .visually-hidden {
@@ -164,7 +166,7 @@ h2 {
 /* --------------- Advanteges section-------------- */
 
 .advanteges-section {
-  background-color: var(--accent-color-light);
+  background-color: var(--accent-color-normal);
 }
 
 .advanteges-list {
@@ -206,7 +208,7 @@ h2 {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  color: var(--accent-color-light);
+  color: var(--accent-color-normal);
 }
 
 .traditions-text {
@@ -218,7 +220,7 @@ h2 {
 }
 
 .accent-text {
-  color: var(--accent-color-light);
+  color: var(--accent-color-normal);
 }
 
 /* --------- Cheaf-section------------ */
@@ -229,14 +231,31 @@ h2 {
   align-items: center;
 }
 
-.chefs-section {
+.chefs-section-title {
+  max-width: 540px;
   text-align: center;
+  margin: 0 auto 80px;
   font-size: 64px;
   font-weight: 900;
+  line-height: 1.31;
+}
+
+.chefs-section-title::before,
+.chefs-section-title::after {
+  content: "";
+  display: block;
+  width: 332px;
+  border: 2px solid var(--accent-color-light);
 }
 
 .chef-card {
   display: flex;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--text-color-light),
+    -16px 16px 0 2px var(--secondary-text-color);
 }
 
 .chef-accent {
@@ -259,9 +278,20 @@ h2 {
   gap: 20px;
 }
 
-.format-cards {
-  padding: 20px;
+.formats-item {
   border: 1px solid black; /*------to remove--------*/
+  flex-basis: calc((100% - 40px) / 3);
+  padding: 20px;
+  height: 444px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+}
+
+.format-cards {
 }
 
 .formats-title {
