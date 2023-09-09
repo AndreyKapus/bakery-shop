@@ -377,6 +377,15 @@ h2 {
   margin-bottom: 16px;
 }
 
+.address-social {
+  fill: var(--text-color-light);
+  cursor: pointer;
+}
+
+.address-social:hover {
+  fill: var(--accent-color-dark);
+}
+
 .footer-politics {
   display: block;
   margin-bottom: 16px;
