@@ -83,6 +83,10 @@ h2 {
   gap: 40px;
 }
 
+.logo-icon {
+  fill: #31261a;
+}
+
 .nav-list {
   display: flex;
   gap: 64px;
@@ -299,6 +303,31 @@ h2 {
   font-size: 64px;
   font-weight: 900;
   line-height: 1.5;
+}
+
+.swap-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--text-color-dark);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-btn-icon {
+  fill: var(--text-color-dark);
+}
+
+.swap-btn:hover {
+  background-color: var(--text-color-dark);
+}
+
+.swap-btn:hover .arrow-btn-icon {
+  fill: var(--text-color-light);
 }
 
 .formats-el-title {
