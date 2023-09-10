@@ -279,6 +279,13 @@ h2 {
 } */
 
 /* ------------ Formats-section--------------- */
+
+.formats-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .format-list {
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +319,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -347,8 +355,13 @@ h2 {
 
 /* -------------- Contacts-section--------------- */
 
+.contacts-section {
+  padding-bottom: 96px;
+}
+
 .contacts-wrapper {
   display: flex;
+  gap: 30px;
 }
 
 .contacts-title {
@@ -367,6 +380,12 @@ h2 {
 
 .politics-link {
   text-decoration: underline;
+}
+
+.contacts-map {
+  flex-shrink: 0;
+  bottom: none;
+  border-radius: 16px;
 }
 
 /* ---------- Footer --------------- */
