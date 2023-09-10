@@ -84,7 +84,6 @@ h2 {
 }
 
 .logo-icon {
-  fill: #31261a;
 }
 
 .nav-list {
@@ -229,12 +228,6 @@ h2 {
 
 /* --------- Cheaf-section------------ */
 
-.coocker-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .chefs-section-title {
   max-width: 540px;
   text-align: center;
@@ -252,8 +245,18 @@ h2 {
   border: 2px solid var(--accent-color-light);
 }
 
+.chef-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
 .chef-card {
   display: flex;
+  gap: 30px;
 }
 
 .chef-photo {
