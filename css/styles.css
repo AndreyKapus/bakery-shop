@@ -26,7 +26,9 @@
   src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -247,7 +249,9 @@ h2 {
 
 .chef-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 30px;
 }
 
 .chef-item {
@@ -263,6 +267,14 @@ h2 {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--text-color-light),
     -16px 16px 0 2px var(--secondary-text-color);
+}
+
+.chef-text-wrapper p {
+  margin-bottom: 30px;
+}
+
+.chef-text-wrapper p:last-child {
+  margin-bottom: 0px;
 }
 
 .chef-accent {
