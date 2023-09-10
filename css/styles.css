@@ -406,6 +406,12 @@ h2 {
   align-items: start;
 }
 
+.logo {
+  /* width: 108px;
+  height: 57px; */
+  fill: var(--text-color-light);
+}
+
 .footer-nav {
   list-style: none;
 }
@@ -414,10 +420,15 @@ h2 {
   margin-bottom: 16px;
 }
 
+.footer-addres-list {
+}
+
 .adress-link {
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  font-style: normal;
+  color: var(--text-color-light);
 }
 
 .address-item {
@@ -426,6 +437,11 @@ h2 {
 
 .address-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 22px;
 }
 
 .address-social {
