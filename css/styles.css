@@ -231,7 +231,7 @@ h2 {
 /* --------- Cheaf-section------------ */
 
 .chefs-section-title {
-  max-width: 540px;
+  position: relative;
   text-align: center;
   margin: 0 auto 80px;
   font-size: 64px;
@@ -241,10 +241,20 @@ h2 {
 
 .chefs-section-title::before,
 .chefs-section-title::after {
+  position: absolute;
   content: "";
-  display: block;
   width: 332px;
   border: 2px solid var(--accent-color-light);
+}
+
+.chefs-section-title::before {
+  left: 0px;
+  bottom: 24px;
+}
+
+.chefs-section-title::after {
+  right: 0px;
+  bottom: 24px;
 }
 
 .chef-list {
