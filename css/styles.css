@@ -423,25 +423,25 @@ h2 {
   background-size: cover;
 }
 
-.footer-section::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/decore-bread-small.png.png);
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 120px;
-  bottom: 0px;
-}
-
+.footer-section::before,
 .footer-section::after {
   content: "";
   position: absolute;
-  background-image: url(../images/decore-bread-large.png.png);
   background-repeat: no-repeat;
+  bottom: 0px;
+}
+
+.footer-section::before {
+  background-image: url(../images/decore-bread-small.png.png);
+  width: 180px;
+  height: 120px;
+}
+
+.footer-section::after {
+  background-image: url(../images/decore-bread-large.png.png);
   width: 380px;
   height: 190px;
   right: 0px;
-  bottom: 0px;
 }
 
 .footer-container {
@@ -510,4 +510,44 @@ h2 {
   margin-bottom: 0;
   font-size: 14px;
   color: var(--secondary-text-color);
+}
+
+/* --------------Modal----------------- */
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  border-radius: 32px;
+  background-color: var(--text-color-light);
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-form {
+  display: inline-block;
 }
