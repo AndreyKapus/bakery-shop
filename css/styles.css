@@ -413,6 +413,7 @@ h2 {
 /* ---------- Footer --------------- */
 
 .footer-section {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   background-image: url(../images/images/footer-bg.png.png);
@@ -420,6 +421,27 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decore-bread-small.png.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 120px;
+  bottom: 0px;
+}
+
+.footer-section::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decore-bread-large.png.png);
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 190px;
+  right: 0px;
+  bottom: 0px;
 }
 
 .footer-container {
