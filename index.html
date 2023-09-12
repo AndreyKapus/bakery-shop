@@ -307,18 +307,22 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">X</button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-subtitle">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
 
         <form class="modal-form">
-          <label>Ім'я</label>
-          <input type="text" />
-          <label>Телефон</label>
-          <input type="tel" />
-          <label>Електронна пошта</label>
-          <input type="email" />
+          <label for="contact-name">Ім'я</label>
+          <input class="contact-input" type="text" id="contact-name" />
 
-          <button type="button">Замовити дзвінок</button>
+          <label for="contact-tel">Телефон</label>
+          <input class="contact-input" type="tel" id="contact-tel" />
+
+          <label for="contact-email">Електронна пошта</label>
+          <input class="contact-input" type="email" id="contact-email" />
+
+          <button class="submit-btn" type="submit">Замовити дзвінок</button>
         </form>
         <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
       </div>
