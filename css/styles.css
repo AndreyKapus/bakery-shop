@@ -75,6 +75,9 @@ h2 {
 /*--------- Header section ----------- */
 
 .header-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding: 32px 0px;
 }
 
@@ -96,12 +99,12 @@ h2 {
 .nav-list-link {
   color: var(--text-color-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav-list-link:hover,
 :focus {
   color: var(--accent-color-normal);
-  font-weight: 600;
 }
 
 .order-button {
@@ -112,11 +115,11 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 0.3s;
 }
 
 .order-button:hover {
   background-color: transparent;
-  color: var(--accent-color-dark);
 }
 
 /* -----------Container--------------------- */
@@ -136,7 +139,13 @@ h2 {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images//images/hero-bg.jpg);
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(../images//images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -325,6 +334,11 @@ h2 {
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100%
   );
+  transition: transform 0.3s;
+}
+
+.formats-item:hover {
+  transform: scale(1.05);
 }
 
 .format-cards {
@@ -349,6 +363,7 @@ h2 {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .arrow-btn-icon {
@@ -361,6 +376,10 @@ h2 {
 
 .swap-btn:hover .arrow-btn-icon {
   fill: var(--text-color-light);
+}
+
+.swap-btn.next {
+  transform: rotate(180deg);
 }
 
 .formats-el-title {
@@ -473,6 +492,11 @@ h2 {
   text-decoration: none;
   font-style: normal;
   color: var(--text-color-light);
+  transition: color 0.3s;
+}
+
+.adress-link:hover {
+  color: var(--accent-color-normal);
 }
 
 .address-item {
@@ -491,6 +515,7 @@ h2 {
 .address-social {
   fill: var(--text-color-light);
   cursor: pointer;
+  transition: fill 0.3s;
 }
 
 .address-social:hover {
@@ -504,6 +529,11 @@ h2 {
   font-weight: 300;
   text-decoration: none;
   color: var(--text-color-light);
+  transition: color 0.3s;
+}
+
+.footer-politics:hover {
+  color: var(--accent-color-normal);
 }
 
 .footer-politics-link {
@@ -519,17 +549,21 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   border-radius: 32px;
   background-color: var(--text-color-light);
 }
