@@ -313,18 +313,44 @@
         </p>
 
         <form class="modal-form">
-          <label for="contact-name">Ім'я</label>
-          <input class="contact-input" type="text" id="contact-name" />
+          <div class="form-field">
+            <label class="visually-hidden" for="contact-name">Ім'я</label>
+            <input
+              class="contact-input"
+              type="text"
+              id="contact-name"
+              placeholder="Ім'я"
+            />
+          </div>
 
-          <label for="contact-tel">Телефон</label>
-          <input class="contact-input" type="tel" id="contact-tel" />
+          <div class="form-field">
+            <label class="visually-hidden" for="contact-tel">Телефон</label>
+            <input
+              class="contact-input"
+              type="tel"
+              id="contact-tel"
+              placeholder="Телефон"
+            />
+          </div>
 
-          <label for="contact-email">Електронна пошта</label>
-          <input class="contact-input" type="email" id="contact-email" />
+          <div class="form-field">
+            <label class="visually-hidden" for="contact-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="contact-input"
+              type="email"
+              id="contact-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
 
           <button class="submit-btn" type="submit">Замовити дзвінок</button>
         </form>
-        <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+        <p class="form-terms">
+          Натискаючи на кнопку я погоджуюсь з
+          <a class="terms-link" href="#">політикою конфіденційності</a>
+        </p>
       </div>
     </div>
     <script src="./modal.js"></script>
