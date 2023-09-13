@@ -4,34 +4,24 @@
   font-weight: 300;
   src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-weight: 400;
   src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-weight: 600;
   src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-weight: 900;
   src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
 }
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 :root {
   --accent-color-light: #cfcfbc;
   --accent-color-normal: #819b57;
@@ -41,7 +31,11 @@
   --secondary-text-color: #a18268;
 }
 
-/* -------- global --------- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -72,7 +66,29 @@ h2 {
   color: var(--text-color-dark);
 }
 
-/*--------- Header section ----------- */
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .header-section {
   position: absolute;
@@ -86,9 +102,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-}
-
-.logo-icon {
 }
 
 .nav-list {
@@ -122,30 +135,9 @@ h2 {
   background-color: transparent;
 }
 
-/* -----------Container--------------------- */
-
-.section {
-  padding: 48px 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* ------------ Hero section --------------- */
-
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(
-      102.76deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%
-    ),
-    url(../images//images/hero-bg.jpg);
+  background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images//images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -163,21 +155,6 @@ h2 {
   color: var(--accent-color-normal);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* --------------- Advanteges section-------------- */
-
 .advanteges-section {
   background-color: var(--accent-color-normal);
 }
@@ -193,8 +170,6 @@ h2 {
   font-weight: 300;
   color: var(--text-color-light);
 }
-
-/* --------------Traditions section-------------- */
 
 .traditions-section {
   padding-top: 96px;
@@ -235,8 +210,6 @@ h2 {
 .accent-text {
   color: var(--accent-color-normal);
 }
-
-/* --------- Cheaf-section------------ */
 
 .chefs-section-title {
   position: relative;
@@ -283,8 +256,7 @@ h2 {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--text-color-light),
-    -16px 16px 0 2px var(--secondary-text-color);
+  box-shadow: -16px 16px 0 0 var(--text-color-light), -16px 16px 0 2px var(--secondary-text-color);
 }
 
 .chef-text-wrapper p {
@@ -304,12 +276,6 @@ h2 {
   font-weight: 600;
 }
 
-/* .chef-text {
-  max-width: 337px;
-} */
-
-/* ------------ Formats-section--------------- */
-
 .formats-wrapper {
   display: flex;
   align-items: center;
@@ -327,20 +293,12 @@ h2 {
   flex-basis: calc((100% - 40px) / 3);
   padding: 20px;
   height: 444px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    #31261a 100%
-  );
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
   transition: transform 0.3s;
 }
 
 .formats-item:hover {
   transform: scale(1.05);
-}
-
-.format-cards {
 }
 
 .formats-title {
@@ -393,8 +351,6 @@ h2 {
   color: var(--text-color-light);
 }
 
-/* -------------- Contacts-section--------------- */
-
 .contacts-section {
   padding-bottom: 96px;
 }
@@ -429,8 +385,6 @@ h2 {
   bottom: none;
   border-radius: 16px;
 }
-
-/* ---------- Footer --------------- */
 
 .footer-section {
   position: relative;
@@ -482,9 +436,6 @@ h2 {
 
 .footer-nav-item:not(:last-child) {
   margin-bottom: 16px;
-}
-
-.footer-addres-list {
 }
 
 .adress-link {
@@ -542,8 +493,6 @@ h2 {
   font-size: 14px;
   color: var(--secondary-text-color);
 }
-
-/* --------------Modal----------------- */
 
 .backdrop {
   position: fixed;
@@ -671,4 +620,4 @@ h2 {
 
 .terms-link:hover {
   color: var(--accent-color-normal);
-}
+}/*# sourceMappingURL=main.css.map */

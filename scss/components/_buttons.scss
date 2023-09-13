@@ -1,0 +1,14 @@
+.order-button {
+  padding: 16px 32px;
+  background-color: var(--accent-color-normal);
+  border: 2px solid var(--accent-color-normal);
+  color: var(--text-color-light);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: transparent;
+}
