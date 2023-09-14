@@ -20,12 +20,6 @@
   gap: 64px;
 }
 
-.nav-list-link {
-  color: var(--text-color-light);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
 .nav-list-link:hover,
 :focus {
   color: var(--accent-color-normal);
