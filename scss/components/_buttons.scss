@@ -9,6 +9,15 @@
   transition: background-color 0.3s;
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
   background-color: transparent;
+}
+
+.order-button.header {
+  display: none;
+
+  @media screen and (min-width: $desk-width) {
+    display: block;
+  }
 }

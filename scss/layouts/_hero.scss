@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 272px 0;
+  padding: 122px 0;
   background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -10,14 +10,34 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media screen and (min-width: $tab-width) {
+    padding: 156px 0;
+  }
+
+  @media screen and (min-width: $desk-width) {
+    padding: 272px 0;
+  }
 }
 
 .hero-title {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   text-align: center;
-  font-size: 128px;
   font-weight: 900;
+  font-size: 60px;
+  line-height: 1;
   color: var(--text-color-light);
+
+  @media screen and (min-width: $tab-width) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 128px;
+  }
+
+  @media screen and (min-width: $desk-width) {
+    line-height: 1.5;
+    margin-bottom: 0px;
+  }
 }
 
 .accent {

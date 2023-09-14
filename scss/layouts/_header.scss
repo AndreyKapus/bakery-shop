@@ -2,7 +2,21 @@
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 32px 0px;
+  padding: 16px 0px;
+
+  @media screen and (min-width: $tab-width) {
+    padding: 32px 0px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $desk-width) {
+    display: block;
+  }
 }
 
 .main-nav {
@@ -16,8 +30,12 @@
 }
 
 .nav-list {
-  display: flex;
-  gap: 64px;
+  display: none;
+
+  @media screen and (min-width: $desk-width) {
+    display: flex;
+    gap: 64px;
+  }
 }
 
 .nav-list-link:hover,
@@ -30,7 +48,7 @@
   border: none;
   fill: var(--text-color-light);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desk-width) {
     display: none;
   }
 }
