@@ -24,3 +24,13 @@
 :focus {
   color: var(--accent-color-normal);
 }
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  fill: var(--text-color-light);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
