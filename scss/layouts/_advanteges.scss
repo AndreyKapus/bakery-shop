@@ -1,15 +1,36 @@
 .advanteges-section {
-  background-color: var(--accent-color-normal);
+  padding: 40px 0px;
+
+  @media screen and (min-width: $tab-width) {
+    padding: 0px;
+    background-color: var(--accent-color-normal);
+  }
 }
 
 .advanteges-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  margin: 0 auto;
-  padding: 16px 0;
-  font-size: 20px;
+  flex-direction: column;
+  padding: 24px 40px;
+  gap: 16px;
+  border-radius: 24px;
+  font-size: 14px;
   font-weight: 300;
-  color: var(--text-color-light);
+  background-color: var(--accent-color-light);
+
+  @media screen and (min-width: $tab-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 16px 0;
+    font-size: 16px;
+    color: var(--text-color-light);
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: $desk-width) {
+    gap: 40px;
+    font-size: 20px;
+  }
 }

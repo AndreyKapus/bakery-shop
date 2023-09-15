@@ -1,4 +1,5 @@
 .order-button {
+  display: block;
   padding: 16px 32px;
   background-color: var(--accent-color-normal);
   border: 2px solid var(--accent-color-normal);
@@ -19,5 +20,14 @@
 
   @media screen and (min-width: $desk-width) {
     display: block;
+  }
+}
+
+.order-button.hero {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $desk-width) {
+    display: none;
   }
 }
