@@ -1,7 +1,7 @@
 .traditions-section {
   padding: 20px 0px;
   @media screen and (min-width: $desk-width) {
-    padding-top: 48px;
+    padding: 48px 0;
   }
 }
 
@@ -41,6 +41,10 @@
 
 .traditions-text {
   margin-bottom: 42px;
+}
+
+.traditions-text:last-child {
+  margin-bottom: 0px;
 }
 
 .traditions-text:last-child {

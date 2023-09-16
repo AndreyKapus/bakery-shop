@@ -18,6 +18,12 @@ body {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -39,14 +45,18 @@ h2 {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 20px;
+
+  @media screen and (min-width: $tab-width) {
+    padding: 48px 0;
+  }
 }
 
 .container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 24px;
 
   @media screen and (min-width: $tab-width) {
     padding: 0 24px;

@@ -1,18 +1,36 @@
+.chef-section {
+  padding: 20px 0;
+
+  @media screen and (min-width: $desk-width) {
+    padding: 48px 0;
+  }
+}
+
 .chefs-section-title {
   position: relative;
   text-align: center;
-  margin: 0 auto 80px;
-  font-size: 64px;
+  margin: 0 auto 24px;
+  font-size: 32px;
   font-weight: 900;
-  line-height: 1.31;
+
+  @media screen and (min-width: $desk-width) {
+    margin: 0 auto 80px;
+    font-size: 64px;
+    line-height: 1.31;
+  }
 }
 
 .chefs-section-title::before,
 .chefs-section-title::after {
+  display: none;
   position: absolute;
   content: "";
   width: 332px;
   border: 2px solid var(--accent-color-light);
+
+  @media screen and (min-width: $desk-width) {
+    display: block;
+  }
 }
 
 .chefs-section-title::before {
@@ -27,9 +45,16 @@
 
 .chef-list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 30px;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: $tab-width) {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 30px;
+  }
 }
 
 .chef-item {
@@ -38,21 +63,23 @@
 
 .chef-card {
   display: flex;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 16px;
+
+  @media screen and (min-width: $desk-width) {
+    gap: 30px;
+  }
 }
 
 .chef-photo {
+  width: 140px;
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--text-color-light),
     -16px 16px 0 2px var(--secondary-text-color);
-}
 
-.chef-text-wrapper p {
-  margin-bottom: 30px;
-}
-
-.chef-text-wrapper p:last-child {
-  margin-bottom: 0px;
+  @media screen and (min-width: $desk-width) {
+    width: 240px;
+  }
 }
 
 .chef-accent {
@@ -60,6 +87,28 @@
 }
 
 .chef-title {
-  font-size: 40px;
+  margin-bottom: 8px;
+  font-size: 24px;
   font-weight: 600;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
+}
+
+.chef-text-wrapper p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 300;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.chef-text-wrapper p:last-child {
+  margin-bottom: 0px;
 }
