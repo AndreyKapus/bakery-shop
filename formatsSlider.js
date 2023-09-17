@@ -3,16 +3,18 @@ const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    480: {
+    768: {
       slidesPerView: 2,
     },
 
-    640: {
+    1280: {
       slidesPerView: 3,
     },
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pagination",
+    bulletClass: "pagination-btn",
+    bulletActiveClass: "pagination-btn-active",
   },
 
   // Navigation arrows

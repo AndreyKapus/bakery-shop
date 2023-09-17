@@ -4,8 +4,20 @@
   gap: 30px;
 }
 
-.swiper-list {
+.formats-wrapper .swap-btn {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.swiper {
   overflow: hidden;
+}
+
+.slider-list {
+  margin-bottom: 32px;
 }
 
 .format-cards {
@@ -70,6 +82,8 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .formats-el-title {
