@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -159,7 +163,7 @@
         </div>
       </section>
 
-      <!-- <section class="section" id="formats-section">
+      <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title">Формати</h2>
           <div class="formats-wrapper">
@@ -168,61 +172,117 @@
                 <use href="./images//symbol-defs.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="format-list">
-              <li class="formats-item">
-                <article class="format-cards">
-                  <img
-                    class="formats-image"
-                    src="./images/images/walrus.jpg"
-                    alt="walrus"
-                  />
-                  <h3 lang="en" class="formats-el-title">Walrus</h3>
-                  <ul class="formats-definition-list">
-                    <li>Площа: до 120 м2</li>
-                    <li>Меню: розширене меню</li>
-                    <li>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </li>
-                    <li>Посадкові місця: є</li>
-                  </ul>
-                </article>
-              </li>
-              <li class="formats-item">
-                <article class="format-cards">
-                  <img
-                    class="formats-image"
-                    src="./images/images/horseshoe.jpg"
-                    alt="walrus"
-                  />
-                  <h3 lang="en" class="formats-el-title">Horseshoe</h3>
-                  <ul class="formats-definition-list">
-                    <li>Площа: до 25 м2</li>
-                    <li>Меню: найпопулярніші позиції меню</li>
-                    <li>
-                      Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
-                    </li>
-                    <li>Посадкові місця: відсутні</li>
-                  </ul>
-                </article>
-              </li>
-              <li class="formats-item">
-                <article class="format-cards">
-                  <img
-                    class="formats-image"
-                    src="./images/images/handlebar.jpg"
-                    alt="walrus"
-                  />
-                  <h3 lang="en" class="formats-el-title">Handlebar</h3>
-                  <ul class="formats-definition-list">
-                    <li>Площа: до 15 м2</li>
-                    <li>Меню: найпопулярніші позиції меню</li>
-                    <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-                    <li>Посадкові місця: відсутні</li>
-                  </ul>
-                </article>
-              </li>
-            </ul>
+            <div class="swiper-container swiper-list">
+              <ul class="swiper-wrapper">
+                <li class="formats-item swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/walrus.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Walrus</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 120 м2</li>
+                      <li>Меню: розширене меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </li>
+                      <li>Посадкові місця: є</li>
+                    </ul>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/horseshoe.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Horseshoe</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 25 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                      </li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ul>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/handlebar.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Handlebar</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 15 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ul>
+                  </article>
+                </li>
+
+                <li class="swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/walrus.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Walrus</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 120 м2</li>
+                      <li>Меню: розширене меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </li>
+                      <li>Посадкові місця: є</li>
+                    </ul>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/horseshoe.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Horseshoe</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 25 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>
+                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                      </li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ul>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-cards">
+                    <img
+                      class="formats-image"
+                      src="./images/images/handlebar.jpg"
+                      alt="walrus"
+                    />
+                    <h3 lang="en" class="formats-el-title">Handlebar</h3>
+                    <ul class="formats-definition-list">
+                      <li>Площа: до 15 м2</li>
+                      <li>Меню: найпопулярніші позиції меню</li>
+                      <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                      <li>Посадкові місця: відсутні</li>
+                    </ul>
+                  </article>
+                </li>
+              </ul>
+            </div>
             <button class="swap-btn next" type="button">
               <svg class="arrow-btn-icon" width="16" height="16">
                 <use href="./images//symbol-defs.svg#icon-arrow"></use>
@@ -230,7 +290,7 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="section contacts-section" id="contacts-section">
         <div class="container">
@@ -427,6 +487,9 @@
         </form>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./formatsSlider.js"></script>
     <script src="./modal.js"></script>
     <script src="./mobileMenu.js"></script>
   </body>
