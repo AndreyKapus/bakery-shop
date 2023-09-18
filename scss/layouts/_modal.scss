@@ -53,23 +53,25 @@
 }
 
 .form-field {
-  margin-bottom: 32px;
-}
+  margin-bottom: 16px;
 
-.modal-form {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .contact-input {
   width: 100%;
+  height: 40px;
   padding: 16px 42px;
   border: 1px solid var(--secondary-text-color);
   border-radius: 8px;
   background-color: transparent;
-  font-size: 16px;
+
+  @media screen and (min-width: $desk-width) {
+    font-size: 16px;
+    height: 55px;
+  }
 }
 
 .contact-input:focus::placeholder {
@@ -86,21 +88,31 @@
 .contact-input::placeholder {
   color: var(--secondary-text-color);
   font-size: 16px;
+  font-weight: 300;
+
+  @media screen and (min-width: $desk-width) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 .submit-btn {
   display: block;
   margin: 0 auto 24px;
-  width: 240px;
-  height: 60px;
+  padding: 10px 24px;
   border-radius: 8px;
   border: 2px solid var(--accent-color-normal);
   background-color: var(--accent-color-normal);
   color: var(--text-color-light);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   transition: transform, 0.3s;
+
+  @media screen and (min-width: $desk-width) {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
 }
 
 .submit-btn:hover {
@@ -108,12 +120,17 @@
 }
 
 .form-terms {
-  width: 212px;
-  margin: 0 auto;
-  color: var(--text-color-dark);
-  text-align: center;
-  font-size: 12px;
-  font-weight: 500;
+  display: none;
+
+  @media screen and (min-width: $tab-width) {
+    display: block;
+    width: 212px;
+    margin: 0 auto;
+    color: var(--text-color-dark);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 .terms-link {
