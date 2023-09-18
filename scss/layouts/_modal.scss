@@ -52,8 +52,12 @@
 
 .modal-subtitle {
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 32px;
   color: var(--accent-color-dark);
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .form-field {
