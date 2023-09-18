@@ -19,16 +19,25 @@
 }
 
 .footer-section::before {
-  background-image: url(../images/decore-bread-small.png.png);
-  width: 180px;
-  height: 120px;
+  display: none;
+
+  @media screen and (min-width: $desk-width) {
+    display: block;
+    left: 0px;
+    background-image: url(../images/decore-bread-small.png.png);
+    width: 180px;
+    height: 120px;
+  }
 }
 
 .footer-section::after {
   background-image: url(../images/decore-bread-large.png.png);
   width: 380px;
   height: 190px;
-  right: 0px;
+
+  @media screen and (min-width: $desk-width) {
+    right: 0px;
+  }
 }
 
 .footer-container {
@@ -129,6 +138,7 @@
   text-decoration: none;
   color: var(--text-color-light);
   transition: color 0.3s;
+  z-index: 1;
 
   @media screen and (min-width: $desk-width) {
     margin-bottom: 16px;
