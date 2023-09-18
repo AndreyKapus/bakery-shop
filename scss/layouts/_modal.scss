@@ -98,7 +98,7 @@
 
 .submit-btn {
   display: block;
-  margin: 0 auto 24px;
+  margin: 0 auto;
   padding: 10px 24px;
   border-radius: 8px;
   border: 2px solid var(--accent-color-normal);
@@ -108,6 +108,10 @@
   font-size: 16px;
   cursor: pointer;
   transition: transform, 0.3s;
+
+  @media screen and (min-width: $tab-width) {
+    margin: 0 auto 24px;
+  }
 
   @media screen and (min-width: $desk-width) {
     padding: 16px 32px;
