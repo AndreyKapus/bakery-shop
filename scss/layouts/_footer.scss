@@ -31,12 +31,17 @@
 }
 
 .footer-section::after {
-  background-image: url(../images/decore-bread-large.png.png);
-  width: 380px;
-  height: 190px;
+  right: 0px;
+  background-image: url(../images/bread-right-mob.png.png);
+  width: 100px;
+  height: 90px;
+  overflow: hidden;
 
   @media screen and (min-width: $desk-width) {
     right: 0px;
+    width: 380px;
+    height: 190px;
+    background-image: url(../images/decore-bread-large.png.png);
   }
 }
 
