@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 .footer-section::before,
@@ -32,25 +33,47 @@
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $desk-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
 }
 
 .logo {
-  /* width: 108px;
-  height: 57px; */
+  margin-bottom: 32px;
   fill: var(--text-color-light);
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-nav {
+  margin-bottom: 18px;
   list-style: none;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .footer-nav-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.footer-addres-list {
+.footer-addres {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 0;
+  }
 }
 
 .adress-link {
@@ -71,12 +94,21 @@
 }
 
 .address-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 22px;
+
+  @media screen and (min-width: $desk-width) {
+    justify-content: start;
+  }
 }
 
 .address-social {
@@ -91,12 +123,16 @@
 
 .footer-politics {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
   color: var(--text-color-light);
   transition: color 0.3s;
+
+  @media screen and (min-width: $desk-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .footer-politics:hover {
