@@ -60,11 +60,13 @@
 }
 
 .logo {
-  fill: var(--text-color-light);
-
   @media screen and (min-width: $desk-width) {
     margin-bottom: 0;
   }
+}
+
+.footer-logo {
+  fill: var(--text-color-light);
 }
 
 .footer-logo {
