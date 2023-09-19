@@ -20,8 +20,15 @@
 
 .burger-btn-close {
   position: absolute;
-  top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 26px;
   right: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
 }
 
 .menu-nav-list {
@@ -41,4 +48,15 @@
 .menu-nav-link:hover,
 .menu-nav-link:focus {
   color: var(--accent-color-normal);
+}
+
+.menu-nav-list::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/mob-menu-bread.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 240px;
+  bottom: 0px;
+  right: 0px;
 }
