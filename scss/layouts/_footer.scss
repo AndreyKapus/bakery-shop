@@ -31,14 +31,16 @@
 }
 
 .footer-section::after {
-  background-image: url(../images/decore-bread-large.png.png);
+  background-image: url(../images/bread-right-mob.png);
   right: 0px;
-  width: 380px;
-  height: 190px;
+  width: 80px;
+  height: 68px;
 
   @media screen and (min-width: $desk-width) {
+    right: 0px;
     width: 380px;
     height: 190px;
+    background-image: url(../images/decore-bread-large.png.png);
   }
 }
 
@@ -58,12 +60,15 @@
 }
 
 .logo {
-  margin-bottom: 32px;
   fill: var(--text-color-light);
 
   @media screen and (min-width: $desk-width) {
     margin-bottom: 0;
   }
+}
+
+.footer-logo {
+  margin-bottom: 32px;
 }
 
 .footer-nav {

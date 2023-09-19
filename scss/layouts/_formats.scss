@@ -39,9 +39,13 @@
 
 .formats-title {
   text-align: center;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.5;
+
+  @media screen and (min-width: $desk-width) {
+    font-size: 64px;
+  }
 }
 
 .swap-btn {
