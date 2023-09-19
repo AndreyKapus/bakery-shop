@@ -94,6 +94,14 @@
   }
 }
 
+.footer-addres-list {
+  text-align: center;
+
+  @media screen and (min-width: $desk-width) {
+    text-align: left;
+  }
+}
+
 .adress-link {
   font-size: 16px;
   font-weight: 300;
