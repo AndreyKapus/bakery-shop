@@ -17,11 +17,3 @@ const togleMenu = () => {
 mobileMenuOpen.addEventListener("click", togleMenu);
 mobileMenuClose.addEventListener("click", togleMenu);
 mobileMenuLink.addEventListener("click", togleMenu);
-
-// const onBodyScroll = () => {
-//   if (mobileMenu.classList.contains("is-open")) {
-//     body.classList.add("stopBodyScroll");
-//   }
-// };
-
-// onBodyScroll();
