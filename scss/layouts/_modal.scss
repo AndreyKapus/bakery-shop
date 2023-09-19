@@ -30,6 +30,13 @@
   right: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  transition: fill 0.3s;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-color-normal);
 }
 
 .backdrop.is-hidden {
